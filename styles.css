@@ -111,8 +111,10 @@ img { max-width: 100%; }
 }
 
 /* ---------- hero ---------- */
+/* padding-block only — the `padding` shorthand here would reset the
+   padding-inline that .shell sets, and the text would run to the edge */
 .hero {
-  padding: 44px 0 40px;
+  padding-block: 44px 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
