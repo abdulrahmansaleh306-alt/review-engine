@@ -283,7 +283,8 @@ var CAL_LINK = "riva-kenpachi-nh1b61/15min";
   Cal("inline", {
     elementOrSelector: "#booking-slot",
     calLink: CAL_LINK,
-    layout: "month_view"
+    layout: "month_view",
+    config: { theme: "light" }   // must be set here, not in Cal("ui")
   });
 
   // force light to match the page — the widget defaults to dark
