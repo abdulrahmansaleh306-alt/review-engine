@@ -286,9 +286,18 @@ var CAL_LINK = "riva-kenpachi-nh1b61/15min";
     layout: "month_view"
   });
 
+  // force light to match the page — the widget defaults to dark
   Cal("ui", {
+    theme: "light",
     hideEventTypeDetails: false,
-    layout: "month_view"
+    layout: "month_view",
+    cssVarsPerTheme: {
+      light: {
+        "cal-brand": "#111111",
+        "cal-bg": "#ffffff",
+        "cal-border-booker": "transparent"
+      }
+    }
   });
 })();
 </script>
